@@ -1,0 +1,11 @@
+<h1><%= @product.name %></h1>
+
+<p>
+    <strong>Price: </strong>
+    <%= number_to_currency(@product.price) %>
+</p>
+
+<p>
+    <strong>Category: </strong>
+    <%= link_to @product.category, categorized_path(category: @product.category) %>
+</p>
